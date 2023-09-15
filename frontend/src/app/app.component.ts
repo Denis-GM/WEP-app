@@ -1,5 +1,5 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {AccountService} from "./servicies/account.service";
+import {AccountService} from "./core/api/account.service";
 import {Router} from "@angular/router";
 import {ProfileComponent} from "./components/profile/profile.component";
 

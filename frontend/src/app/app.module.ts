@@ -10,7 +10,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 import { StudentComponent } from './components/student/student.component';
 import { TeacherComponent } from './components/teacher/teacher.component';
-import { AccountComponent } from './components/account/account.component';
+import { AccountComponent } from './shared/components/account/account.component';
 import { RegistrationComponent } from './components/registration/registration.component';
 import { LoginComponent } from './components/login/login.component';
 import { MainComponent } from './components/main/main.component';
@@ -18,7 +18,7 @@ import { AppRoutingModule } from "./app-routing.module";
 import { HeaderComponent } from './components/header/header.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { GroupTeacherComponent } from './components/teacher/components/group-teacher/group-teacher.component';
-import { ConstructorComponent } from './components/teacher/components/constructor/constructor.component';
+import { ConstructorComponent } from './teacher/components/constructor/constructor.component';
 import {DialogWindowComponent} from "./components/dialog-window/dialog-window.component";
 import { GroupDetailedTeacherComponent } from './components/teacher/components/group-detailed-teacher/group-detailed-teacher.component';
 import {TuiAccordionModule, TuiCheckboxModule} from "@taiga-ui/kit";
@@ -48,7 +48,7 @@ import { StatisticsComponent } from './components/statistics/statistics.componen
 import {
   DialogWindowTeacherComponent
 } from "./components/teacher/components/dialog-window-teacher/dialog-window-teacher.component";
-import { DialogWindowTestStartComponent } from './components/student/components/dialog-window-test-start/dialog-window-test-start.component';
+import { DialogWindowTestStartComponent } from './student/components/dialog-window-test-start/dialog-window-test-start.component';
 import { StatisticsTeacherComponent } from './components/teacher/components/statistics-teacher/statistics-teacher.component';
 
 
