@@ -1,6 +1,6 @@
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
-import {IGroup} from "../../../../interfaces/interface.group";
-import {GroupService} from "../../../../servicies/group.service";
+import {IGroup} from "../../../core/interfaces/interface.group";
+import {GroupService} from "../../../core/api/group.service";
 import {Router} from "@angular/router";
 
 @Component({

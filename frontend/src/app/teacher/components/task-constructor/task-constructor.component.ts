@@ -1,10 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {FormArray, FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
-import {StudentService} from "../../../../servicies/student.service";
-import {GroupService} from "../../../../servicies/group.service";
-import {TaskService} from "../../../../servicies/task.service";
-import {QuestionService} from "../../../../servicies/question.service";
-import {toNumbers} from "@angular/compiler-cli/src/version_helpers";
+import {StudentService} from "../../../core/api/student.service";
+import {GroupService} from "../../../core/api/group.service";
+import {TaskService} from "../../../core/api/task.service";
+import {QuestionService} from "../../../core/api/question.service";
 import {Router} from "@angular/router";
 
 @Component({

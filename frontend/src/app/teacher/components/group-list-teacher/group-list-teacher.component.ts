@@ -1,6 +1,6 @@
 import {ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit} from '@angular/core';
-import {IGroup} from "../../../../interfaces/interface.group";
-import {GroupService} from "../../../../servicies/group.service";
+import {IGroup} from "../../../core/interfaces/interface.group";
+import {GroupService} from "../../../core/api/group.service";
 import {Router} from "@angular/router";
 
 @Component({
@@ -34,7 +34,7 @@ export class GroupListTeacherComponent implements OnInit{
 
   getGroups(): void {
     this.groupService.getGroups().subscribe(
-      groups => {
+      (groups: any) => {
         console.log(groups)
         this.groups = groups;
     });

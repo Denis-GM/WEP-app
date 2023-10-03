@@ -1,9 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {Location} from '@angular/common';
 import {ActivatedRoute} from "@angular/router";
-import {Subscription} from "rxjs";
-import {GroupService} from "../../../../servicies/group.service";
-import {IGroup} from "../../../../interfaces/interface.group";
+import {Subscription} from 'rxjs';
+import {GroupService} from "../../../core/api/group.service";
+import {IGroup} from "../../../core/interfaces/interface.group";
 
 @Component({
   selector: 'app-group-detailed-student',
@@ -19,7 +19,7 @@ export class GroupDetailedStudentComponent implements OnInit{
   private routeSubscription: Subscription;
   constructor(private route: ActivatedRoute, private groupService: GroupService,
               private _location: Location) {
-    this.routeSubscription = route.params.subscribe(params => {
+    this.routeSubscription = route.params.subscribe((params: any) => {
       this.idGroup = params['id'];
     });
   }

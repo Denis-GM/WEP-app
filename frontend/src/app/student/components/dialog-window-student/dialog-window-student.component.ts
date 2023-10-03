@@ -1,6 +1,6 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
-import {GroupService} from "../../../../servicies/group.service";
+import {GroupService} from "../../../core/api/group.service";
 
 @Component({
   selector: 'app-dialog-window-student',

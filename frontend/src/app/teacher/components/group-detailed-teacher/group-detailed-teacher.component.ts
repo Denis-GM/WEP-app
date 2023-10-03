@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {Subscription} from "rxjs";
-import {GroupService} from "../../../../servicies/group.service";
-import {IGroup} from "../../../../interfaces/interface.group";
+import {GroupService} from "../../../core/api/group.service";
+import {IGroup} from "../../../core/interfaces/interface.group";
 import {Location} from '@angular/common';
 
 @Component({

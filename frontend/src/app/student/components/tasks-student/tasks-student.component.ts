@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {ITest} from "../../../../interfaces/interface.test";
-import {TaskService} from "../../../../servicies/task.service";
+import {ITest} from "../../../core/interfaces/interface.test";
+import {TaskService} from "../../../core/api/task.service";
 
 @Component({
   selector: 'app-task-student',
@@ -19,11 +19,11 @@ export class TasksStudentComponent implements OnInit {
 
   createTask(): void {
     this.taskService.getTasks().subscribe(
-      data => {
+      (data: any) => {
         console.log(data);
         this.tasks = data;
       },
-      error => {
+      (error: any) => {
         console.log(error);
       }
     )

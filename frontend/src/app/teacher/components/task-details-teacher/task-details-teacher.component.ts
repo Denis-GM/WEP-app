@@ -1,11 +1,11 @@
 import {Component, OnInit} from '@angular/core';
-import {ITest} from "../../../../interfaces/interface.test";
-import {TaskService} from "../../../../servicies/task.service";
-import {IGroup} from "../../../../interfaces/interface.group";
+import {ITest} from "../../../core/interfaces/interface.test";
+import {TaskService} from "../../../core/api/task.service";
+import {IGroup} from "../../../core/interfaces/interface.group";
 import {Subscription} from "rxjs";
 import {ActivatedRoute} from "@angular/router";
-import {GroupService} from "../../../../servicies/group.service";
-import {QuestionService} from "../../../../servicies/question.service";
+import {GroupService} from "../../../core/api/group.service";
+import {QuestionService} from "../../../core/api/question.service";
 import {Location} from '@angular/common';
 
 @Component({

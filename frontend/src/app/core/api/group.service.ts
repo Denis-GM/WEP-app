@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders, HttpParams} from "@angular/common/http";
 import {forkJoin, Observable} from "rxjs";
-import {IGroup} from "../core/interfaces/interface.group";
+import {IGroup} from "../../core/interfaces/interface.group";
 import {TaskService} from "./task.service";
 
 @Injectable({

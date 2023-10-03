@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
-import {AccountService} from "../../servicies/account.service";
+import {AccountService} from "../../../core/api/account.service";
 import {Router} from "@angular/router";
-import {StudentService} from "../../servicies/student.service";
+import {StudentService} from "../../../core/api/student.service";
 
 export interface IError {
   last_name: string,

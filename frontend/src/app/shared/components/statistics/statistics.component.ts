@@ -1,9 +1,7 @@
 import {ChangeDetectorRef, Component, OnInit} from '@angular/core';
-import {ITest} from "../../interfaces/interface.test";
-import {IGroup} from "../../interfaces/interface.group";
-import {TaskService} from "../../servicies/task.service";
-import {GroupService} from "../../servicies/group.service";
-import {StudentService} from "../../servicies/student.service";
+import {TaskService} from "../../../core/api/task.service";
+import {GroupService} from "../../../core/api/group.service";
+import {StudentService} from "../../../core/api/student.service";
 
 @Component({
   selector: 'app-statistics',

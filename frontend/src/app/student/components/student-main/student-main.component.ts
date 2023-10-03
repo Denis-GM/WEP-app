@@ -1,9 +1,9 @@
 import {ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit} from '@angular/core';
-import {ITest} from "../../../../interfaces/interface.test";
-import {TaskService} from "../../../../servicies/task.service";
-import {IGroup} from "../../../../interfaces/interface.group";
-import {GroupService} from "../../../../servicies/group.service";
-import {StudentService} from "../../../../servicies/student.service";
+import {ITest} from "../../../core/interfaces/interface.test";
+import {TaskService} from "../../../core/api/task.service";
+import {IGroup} from "../../../core/interfaces/interface.group";
+import {GroupService} from "../../../core/api/group.service";
+import {StudentService} from "../../../core/api/student.service";
 
 @Component({
   selector: 'app-student-main',

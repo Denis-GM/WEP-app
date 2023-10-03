@@ -1,6 +1,4 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {FormControl, FormGroup, Validators} from "@angular/forms";
-import {GroupService} from "../../../servicies/group.service";
 
 @Component({
   selector: 'app-dialog-window-test-start',

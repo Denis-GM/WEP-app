@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {AccountService} from "../../servicies/account.service";
+import {AccountService} from "../../../core/api/account.service";
 import {Router} from "@angular/router";
 
 @Component({
@@ -33,7 +33,7 @@ export class ProfileComponent implements OnInit{
         this.user = data;
         console.log(this.user);
       },
-      error => {
+      (error: any) => {
         // console.log(error);
       }
     )
@@ -46,7 +46,7 @@ export class ProfileComponent implements OnInit{
         localStorage.clear();
         this.router1.navigate(['']);
       },
-      error => {
+      (error: any) => {
         console.log(error);
       }
     )

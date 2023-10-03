@@ -1,6 +1,9 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { Routes, RouterModule, Route } from "@angular/router";
+
+import {TuiAccordionModule} from '@taiga-ui/kit';
+
 import { TeacherComponent } from "./teacher.component";
 import { StatisticsComponent } from "../shared/components/statistics/statistics.component";
 import { ProfileComponent } from "../shared/components/profile/profile.component";
@@ -14,6 +17,9 @@ import { GroupDetailedTeacherComponent } from "./components/group-detailed-teach
 import { TasksTeacherComponent } from "./components/tasks/tasks-teacher.component";
 import { TaskListTeacherComponent } from "./components/task-list-teacher/task-list-teacher.component";
 import { TaskDetailsTeacherComponent } from "./components/task-details-teacher/task-details-teacher.component";
+import { NavigationBarTeacherComponent } from "./components/navigation-bar-teacher/navigation-bar-teacher.component";
+import { DialogWindowTeacherComponent } from "./components/dialog-window-teacher/dialog-window-teacher.component";
+import { SharedModule } from "../shared/shared.module";
 
 const routesConstructor: Route = { 
   path: 'constructor', component: ConstructorComponent, 
@@ -51,9 +57,25 @@ const teacherRoutes: Routes = [{
 ];
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    TeacherComponent,
+    ConstructorComponent,
+    TaskConstructorComponent,
+    QuestionsConstructorComponent,
+    GroupTeacherComponent,
+    GroupListTeacherComponent,
+    GroupDetailedTeacherComponent,
+    TasksTeacherComponent,
+    TaskListTeacherComponent,
+    TaskDetailsTeacherComponent,
+    StatisticsTeacherComponent,
+    DialogWindowTeacherComponent,
+    NavigationBarTeacherComponent,
+  ],
   imports: [
     CommonModule, 
+    SharedModule,
+    TuiAccordionModule,
     RouterModule.forChild(teacherRoutes)
   ],
 })

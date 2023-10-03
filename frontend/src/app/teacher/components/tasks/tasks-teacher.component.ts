@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {TaskService} from "../../../../servicies/task.service";
-import {ITest} from "../../../../interfaces/interface.test";
+import {TaskService} from "../../../core/api/task.service";
+import {ITest} from "../../../core/interfaces/interface.test";
 
 @Component({
   selector: 'app-task-teacher',

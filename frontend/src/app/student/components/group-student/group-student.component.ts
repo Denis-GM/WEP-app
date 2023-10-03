@@ -1,7 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {GroupService} from "../../../../servicies/group.service";
-import {IGroup} from "../../../../interfaces/interface.group";
-import {Router} from "@angular/router";
 
 
 @Component({

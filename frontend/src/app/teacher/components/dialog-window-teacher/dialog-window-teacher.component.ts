@@ -1,7 +1,7 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
-import {GroupService} from "../../../../servicies/group.service";
-import {IGroup} from "../../../../interfaces/interface.group";
+import {GroupService} from "../../../core/api/group.service";
+import {IGroup} from "../../../core/interfaces/interface.group";
 
 @Component({
   selector: 'app-dialog-window-teacher',

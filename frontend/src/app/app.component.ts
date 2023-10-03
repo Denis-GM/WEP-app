@@ -1,7 +1,5 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {AccountService} from "./core/api/account.service";
-import {Router} from "@angular/router";
-import {ProfileComponent} from "./components/profile/profile.component";
 
 @Component({
   selector: 'app-root',
@@ -22,7 +20,7 @@ export class AppComponent implements OnInit{
         localStorage.setItem('user-full-name', `${data.last_name} ${data.first_name} ${data.patronymic}`);
         localStorage.setItem('is-teacher', data.is_teacher);
       },
-      error => {
+      (error: any) => {
         console.log(error);
       }
     )
